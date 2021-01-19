@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
 
 RUN pip install -r requirements.txt
-EXPOSE 8080
+EXPOSE 80
 CMD ["python","web.py"]
