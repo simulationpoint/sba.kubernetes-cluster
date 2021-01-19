@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sba-kubernetes-cluster
-        image: danyyanez/sba_kubernetes
+        image: karinegh18/flask-app:1
         ports:
         - containerPort: 80
 ---
