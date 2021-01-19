@@ -1,0 +1,350 @@
+Name:         balanced-5744b548b4-bnwwt
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 11 Jan 2021 13:08:13 -0500
+Labels:       app=balanced
+              pod-template-hash=5744b548b4
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.6
+IPs:
+  IP:           172.17.0.6
+Controlled By:  ReplicaSet/balanced-5744b548b4
+Containers:
+  echoserver:
+    Container ID:   docker://a2f91800a09d9f977e4f69b348e046820dccf2a1cdd6347f4cfd0c5fa424796f
+    Image:          k8s.gcr.io/echoserver:1.4
+    Image ID:       docker-pullable://k8s.gcr.io/echoserver@sha256:5d99aa1120524c801bc8c1a7077e8f5ec122ba16b6dda1a5d3826057f67b9bcb
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Mon, 11 Jan 2021 13:42:32 -0500
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 11 Jan 2021 13:08:15 -0500
+      Finished:     Mon, 11 Jan 2021 13:12:05 -0500
+    Ready:          True
+    Restart Count:  1
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-wjn5d (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-wjn5d:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-wjn5d
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:          <none>
+
+
+Name:         hello-minikube-6ddfcc9757-mdz48
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 11 Jan 2021 11:32:16 -0500
+Labels:       app=hello-minikube
+              pod-template-hash=6ddfcc9757
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.2
+IPs:
+  IP:           172.17.0.2
+Controlled By:  ReplicaSet/hello-minikube-6ddfcc9757
+Containers:
+  echoserver:
+    Container ID:   docker://5a7f1ff54ccd34f55c92329aa8c7a6d776c1c5057749bc63d74da481f390fd6c
+    Image:          k8s.gcr.io/echoserver:1.4
+    Image ID:       docker-pullable://k8s.gcr.io/echoserver@sha256:5d99aa1120524c801bc8c1a7077e8f5ec122ba16b6dda1a5d3826057f67b9bcb
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Mon, 11 Jan 2021 13:42:31 -0500
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 11 Jan 2021 11:32:19 -0500
+      Finished:     Mon, 11 Jan 2021 13:12:03 -0500
+    Ready:          True
+    Restart Count:  1
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-wjn5d (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-wjn5d:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-wjn5d
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:          <none>
+
+
+Name:         sba-deployment-8574cdb5df-6hddm
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 18 Jan 2021 22:24:10 -0500
+Labels:       app=sba-kubernetes-cluster
+              pod-template-hash=8574cdb5df
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.8
+IPs:
+  IP:           172.17.0.8
+Controlled By:  ReplicaSet/sba-deployment-8574cdb5df
+Containers:
+  sba-kubernetes-cluster:
+    Container ID:   docker://a2f55d0e281a1c84abba90685b50cc85178552b21ba54186656dcbcb833ea33a
+    Image:          danyyanez/sba_kuber
+    Image ID:       docker-pullable://danyyanez/sba_kuber@sha256:2d45f65d40de6ed67c037211373cd771f213a0af7fb7e4ea96c904b3c3fc860c
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 18 Jan 2021 22:24:22 -0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-wjn5d (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-wjn5d:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-wjn5d
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  9m39s  default-scheduler  Successfully assigned default/sba-deployment-8574cdb5df-6hddm to minikube
+  Normal  Pulling    9m31s  kubelet            Pulling image "danyyanez/sba_kuber"
+  Normal  Pulled     9m27s  kubelet            Successfully pulled image "danyyanez/sba_kuber" in 3.4552107s
+  Normal  Created    9m27s  kubelet            Created container sba-kubernetes-cluster
+  Normal  Started    9m27s  kubelet            Started container sba-kubernetes-cluster
+
+
+Name:         sba-deployment-8574cdb5df-lzwkg
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 18 Jan 2021 22:24:10 -0500
+Labels:       app=sba-kubernetes-cluster
+              pod-template-hash=8574cdb5df
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.7
+IPs:
+  IP:           172.17.0.7
+Controlled By:  ReplicaSet/sba-deployment-8574cdb5df
+Containers:
+  sba-kubernetes-cluster:
+    Container ID:   docker://412974bd2bf62e219dfa86f0226bb422630fbc891b49c42ea35135ff30992ef8
+    Image:          danyyanez/sba_kuber
+    Image ID:       docker-pullable://danyyanez/sba_kuber@sha256:2d45f65d40de6ed67c037211373cd771f213a0af7fb7e4ea96c904b3c3fc860c
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 18 Jan 2021 22:24:20 -0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-wjn5d (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-wjn5d:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-wjn5d
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  9m39s  default-scheduler  Successfully assigned default/sba-deployment-8574cdb5df-lzwkg to minikube
+  Normal  Pulling    9m31s  kubelet            Pulling image "danyyanez/sba_kuber"
+  Normal  Pulled     9m29s  kubelet            Successfully pulled image "danyyanez/sba_kuber" in 2.0164522s
+  Normal  Created    9m29s  kubelet            Created container sba-kubernetes-cluster
+  Normal  Started    9m29s  kubelet            Started container sba-kubernetes-cluster
+
+
+Name:         sba-deployment-8574cdb5df-qdsdm
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 18 Jan 2021 22:24:10 -0500
+Labels:       app=sba-kubernetes-cluster
+              pod-template-hash=8574cdb5df
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.9
+IPs:
+  IP:           172.17.0.9
+Controlled By:  ReplicaSet/sba-deployment-8574cdb5df
+Containers:
+  sba-kubernetes-cluster:
+    Container ID:   docker://cd31b8a1142da73b02409ac43d4a21217a99391ad04671b2f209ec5f08d3ba6e
+    Image:          danyyanez/sba_kuber
+    Image ID:       docker-pullable://danyyanez/sba_kuber@sha256:2d45f65d40de6ed67c037211373cd771f213a0af7fb7e4ea96c904b3c3fc860c
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 18 Jan 2021 22:24:23 -0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-wjn5d (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-wjn5d:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-wjn5d
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  9m40s  default-scheduler  Successfully assigned default/sba-deployment-8574cdb5df-qdsdm to minikube
+  Normal  Pulling    9m31s  kubelet            Pulling image "danyyanez/sba_kuber"
+  Normal  Pulled     9m27s  kubelet            Successfully pulled image "danyyanez/sba_kuber" in 3.8862053s
+  Normal  Created    9m27s  kubelet            Created container sba-kubernetes-cluster
+  Normal  Started    9m26s  kubelet            Started container sba-kubernetes-cluster
+Name:               minikube
+Roles:              control-plane,master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=9f1e482427589ff8451c4723b6ba53bb9742fbb1
+                    minikube.k8s.io/name=minikube
+                    minikube.k8s.io/updated_at=2021_01_11T11_05_05_0700
+                    minikube.k8s.io/version=v1.16.0
+                    node-role.kubernetes.io/control-plane=
+                    node-role.kubernetes.io/master=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 11 Jan 2021 11:04:59 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 18 Jan 2021 22:33:41 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 18 Jan 2021 22:28:48 -0500   Fri, 15 Jan 2021 19:57:46 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 18 Jan 2021 22:28:48 -0500   Fri, 15 Jan 2021 19:57:46 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 18 Jan 2021 22:28:48 -0500   Fri, 15 Jan 2021 19:57:46 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 18 Jan 2021 22:28:48 -0500   Fri, 15 Jan 2021 19:57:46 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.49.2
+  Hostname:    minikube
+Capacity:
+  cpu:                2
+  ephemeral-storage:  61255492Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             2036804Ki
+  pods:               110
+Allocatable:
+  cpu:                2
+  ephemeral-storage:  61255492Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             2036804Ki
+  pods:               110
+System Info:
+  Machine ID:                 1ff50a28c5d4430ca1c15574aa44eea2
+  System UUID:                5f2ebb92-3747-419c-a131-d2424af22699
+  Boot ID:                    99da6a5c-3b31-47fc-bbc7-9abc6dbd0dac
+  Kernel Version:             4.19.121-linuxkit
+  OS Image:                   Ubuntu 20.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://20.10.0
+  Kubelet Version:            v1.20.0
+  Kube-Proxy Version:         v1.20.0
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+Non-terminated Pods:          (14 in total)
+  Namespace                   Name                                         CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                                         ------------  ----------  ---------------  -------------  ---
+  default                     balanced-5744b548b4-bnwwt                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d9h
+  default                     hello-minikube-6ddfcc9757-mdz48              0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d11h
+  default                     sba-deployment-8574cdb5df-6hddm              0 (0%)        0 (0%)      0 (0%)           0 (0%)         9m40s
+  default                     sba-deployment-8574cdb5df-lzwkg              0 (0%)        0 (0%)      0 (0%)           0 (0%)         9m40s
+  default                     sba-deployment-8574cdb5df-qdsdm              0 (0%)        0 (0%)      0 (0%)           0 (0%)         9m40s
+  kube-system                 coredns-74ff55c5b-qgtzh                      100m (5%)     0 (0%)      70Mi (3%)        170Mi (8%)     7d11h
+  kube-system                 etcd-minikube                                100m (5%)     0 (0%)      100Mi (5%)       0 (0%)         7d11h
+  kube-system                 kube-apiserver-minikube                      250m (12%)    0 (0%)      0 (0%)           0 (0%)         7d11h
+  kube-system                 kube-controller-manager-minikube             200m (10%)    0 (0%)      0 (0%)           0 (0%)         7d11h
+  kube-system                 kube-proxy-m7x7s                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d11h
+  kube-system                 kube-scheduler-minikube                      100m (5%)     0 (0%)      0 (0%)           0 (0%)         7d11h
+  kube-system                 storage-provisioner                          0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d11h
+  kubernetes-dashboard        dashboard-metrics-scraper-c95fcf479-44jn7    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d11h
+  kubernetes-dashboard        kubernetes-dashboard-6cff4c7c4f-p5gcf        0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d11h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                750m (37%)  0 (0%)
+  memory             170Mi (8%)  170Mi (8%)
+  ephemeral-storage  100Mi (0%)  0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+NAME             TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+balanced         LoadBalancer   10.111.70.19     <pending>     8080:31560/TCP   7d9h
+hello-minikube   NodePort       10.103.193.178   <none>        8080:31885/TCP   7d11h
+kubernetes       ClusterIP      10.96.0.1        <none>        443/TCP          7d11h
+sba-service      NodePort       10.101.36.97     <none>        80:30001/TCP     9m40s
+[0;32mKubernetes master[0m is running at [0;33mhttps://127.0.0.1:55008[0m
+[0;32mKubeDNS[0m is running at [0;33mhttps://127.0.0.1:55008/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy[0m
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
