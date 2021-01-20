@@ -1,0 +1,277 @@
+NAME                             READY   UP-TO-DATE   AVAILABLE   AGE
+jesh-kubernetes-app-deployment   3/3     3            3           42m
+NAME                                              READY   STATUS    RESTARTS   AGE
+jesh-kubernetes-app-deployment-7f647bb7d4-972zc   1/1     Running   1          42m
+jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd   1/1     Running   1          42m
+jesh-kubernetes-app-deployment-7f647bb7d4-lctsz   1/1     Running   1          42m
+LAST SEEN   TYPE      REASON                    OBJECT                                                 MESSAGE
+42m         Normal    Scheduled                 pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Successfully assigned default/jesh-kubernetes-app-deployment-7f647bb7d4-972zc to minikube
+42m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Pulling image "211896/jesh_docker_image"
+42m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Successfully pulled image "211896/jesh_docker_image" in 3.9923734s
+42m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Created container kubernetesapp
+42m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Started container kubernetesapp
+20m         Normal    SandboxChanged            pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Pod sandbox changed, it will be killed and re-created.
+19m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Pulling image "211896/jesh_docker_image"
+19m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Successfully pulled image "211896/jesh_docker_image" in 30.9663054s
+19m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Created container kubernetesapp
+19m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-972zc    Started container kubernetesapp
+42m         Normal    Scheduled                 pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Successfully assigned default/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd to minikube
+42m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Pulling image "211896/jesh_docker_image"
+42m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Successfully pulled image "211896/jesh_docker_image" in 3.3020703s
+42m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Created container kubernetesapp
+42m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Started container kubernetesapp
+20m         Normal    SandboxChanged            pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Pod sandbox changed, it will be killed and re-created.
+19m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Pulling image "211896/jesh_docker_image"
+19m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Successfully pulled image "211896/jesh_docker_image" in 35.7341209s
+19m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Created container kubernetesapp
+19m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    Started container kubernetesapp
+73m         Normal    Scheduled                 pod/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s    Successfully assigned default/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s to minikube
+73m         Warning   FailedMount               pod/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s    MountVolume.SetUp failed for volume "default-token-j6lzw" : failed to sync secret cache: timed out waiting for the condition
+73m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s    Pulling image "211896/jesh_docker_image"
+71m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s    Successfully pulled image "211896/jesh_docker_image" in 1m30.1889996s
+71m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s    Created container kubernetesapp
+71m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s    Started container kubernetesapp
+60m         Normal    Killing                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s    Stopping container kubernetesapp
+42m         Normal    Scheduled                 pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Successfully assigned default/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz to minikube
+42m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Pulling image "211896/jesh_docker_image"
+42m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Successfully pulled image "211896/jesh_docker_image" in 2.6627067s
+42m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Created container kubernetesapp
+42m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Started container kubernetesapp
+20m         Normal    SandboxChanged            pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Pod sandbox changed, it will be killed and re-created.
+19m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Pulling image "211896/jesh_docker_image"
+19m         Warning   Failed                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Failed to pull image "211896/jesh_docker_image": rpc error: code = Unknown desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+19m         Warning   Failed                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Error: ErrImagePull
+19m         Normal    BackOff                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Back-off pulling image "211896/jesh_docker_image"
+19m         Warning   Failed                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Error: ImagePullBackOff
+19m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Successfully pulled image "211896/jesh_docker_image" in 8.2911561s
+19m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Created container kubernetesapp
+19m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    Started container kubernetesapp
+73m         Normal    Scheduled                 pod/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76    Successfully assigned default/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76 to minikube
+73m         Warning   FailedMount               pod/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76    MountVolume.SetUp failed for volume "default-token-j6lzw" : failed to sync secret cache: timed out waiting for the condition
+73m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76    Pulling image "211896/jesh_docker_image"
+71m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76    Successfully pulled image "211896/jesh_docker_image" in 1m33.1765196s
+71m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76    Created container kubernetesapp
+71m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76    Started container kubernetesapp
+60m         Normal    Killing                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-m7j76    Stopping container kubernetesapp
+73m         Normal    Scheduled                 pod/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd    Successfully assigned default/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd to minikube
+73m         Warning   FailedMount               pod/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd    MountVolume.SetUp failed for volume "default-token-j6lzw" : failed to sync secret cache: timed out waiting for the condition
+73m         Normal    Pulling                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd    Pulling image "211896/jesh_docker_image"
+71m         Normal    Pulled                    pod/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd    Successfully pulled image "211896/jesh_docker_image" in 1m33.7965396s
+71m         Normal    Created                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd    Created container kubernetesapp
+71m         Normal    Started                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd    Started container kubernetesapp
+60m         Normal    Killing                   pod/jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd    Stopping container kubernetesapp
+73m         Normal    SuccessfulCreate          replicaset/jesh-kubernetes-app-deployment-7f647bb7d4   Created pod: jesh-kubernetes-app-deployment-7f647bb7d4-m7j76
+73m         Normal    SuccessfulCreate          replicaset/jesh-kubernetes-app-deployment-7f647bb7d4   Created pod: jesh-kubernetes-app-deployment-7f647bb7d4-ktt5s
+73m         Normal    SuccessfulCreate          replicaset/jesh-kubernetes-app-deployment-7f647bb7d4   Created pod: jesh-kubernetes-app-deployment-7f647bb7d4-zhjrd
+42m         Normal    SuccessfulCreate          replicaset/jesh-kubernetes-app-deployment-7f647bb7d4   Created pod: jesh-kubernetes-app-deployment-7f647bb7d4-lctsz
+42m         Normal    SuccessfulCreate          replicaset/jesh-kubernetes-app-deployment-7f647bb7d4   Created pod: jesh-kubernetes-app-deployment-7f647bb7d4-972zc
+42m         Normal    SuccessfulCreate          replicaset/jesh-kubernetes-app-deployment-7f647bb7d4   Created pod: jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd
+73m         Normal    ScalingReplicaSet         deployment/jesh-kubernetes-app-deployment              Scaled up replica set jesh-kubernetes-app-deployment-7f647bb7d4 to 3
+42m         Normal    ScalingReplicaSet         deployment/jesh-kubernetes-app-deployment              Scaled up replica set jesh-kubernetes-app-deployment-7f647bb7d4 to 3
+74m         Normal    NodeHasSufficientMemory   node/minikube                                          Node minikube status is now: NodeHasSufficientMemory
+74m         Normal    NodeHasNoDiskPressure     node/minikube                                          Node minikube status is now: NodeHasNoDiskPressure
+74m         Normal    NodeHasSufficientPID      node/minikube                                          Node minikube status is now: NodeHasSufficientPID
+74m         Normal    Starting                  node/minikube                                          Starting kubelet.
+74m         Normal    NodeHasSufficientMemory   node/minikube                                          Node minikube status is now: NodeHasSufficientMemory
+74m         Normal    NodeHasNoDiskPressure     node/minikube                                          Node minikube status is now: NodeHasNoDiskPressure
+74m         Normal    NodeHasSufficientPID      node/minikube                                          Node minikube status is now: NodeHasSufficientPID
+74m         Normal    NodeNotReady              node/minikube                                          Node minikube status is now: NodeNotReady
+74m         Normal    NodeAllocatableEnforced   node/minikube                                          Updated Node Allocatable limit across pods
+73m         Normal    NodeReady                 node/minikube                                          Node minikube status is now: NodeReady
+73m         Normal    RegisteredNode            node/minikube                                          Node minikube event: Registered Node minikube in Controller
+73m         Warning   readOnlySysFS             node/minikube                                          CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+73m         Normal    Starting                  node/minikube                                          Starting kube-proxy.
+47m         Normal    Starting                  node/minikube                                          Starting kubelet.
+47m         Normal    NodeHasSufficientMemory   node/minikube                                          Node minikube status is now: NodeHasSufficientMemory
+47m         Normal    NodeHasNoDiskPressure     node/minikube                                          Node minikube status is now: NodeHasNoDiskPressure
+47m         Normal    NodeHasSufficientPID      node/minikube                                          Node minikube status is now: NodeHasSufficientPID
+47m         Normal    NodeAllocatableEnforced   node/minikube                                          Updated Node Allocatable limit across pods
+46m         Normal    RegisteredNode            node/minikube                                          Node minikube event: Registered Node minikube in Controller
+46m         Warning   readOnlySysFS             node/minikube                                          CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+46m         Normal    Starting                  node/minikube                                          Starting kube-proxy.
+20m         Normal    Starting                  node/minikube                                          Starting kubelet.
+20m         Normal    NodeHasSufficientMemory   node/minikube                                          Node minikube status is now: NodeHasSufficientMemory
+20m         Normal    NodeHasNoDiskPressure     node/minikube                                          Node minikube status is now: NodeHasNoDiskPressure
+20m         Normal    NodeHasSufficientPID      node/minikube                                          Node minikube status is now: NodeHasSufficientPID
+20m         Normal    NodeAllocatableEnforced   node/minikube                                          Updated Node Allocatable limit across pods
+19m         Normal    RegisteredNode            node/minikube                                          Node minikube event: Registered Node minikube in Controller
+19m         Warning   readOnlySysFS             node/minikube                                          CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+19m         Normal    Starting                  node/minikube                                          Starting kube-proxy.
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: /Users/grand/.minikube/ca.crt
+    server: https://127.0.0.1:55032
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    namespace: default
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: /Users/grand/.minikube/profiles/minikube/client.crt
+    client-key: /Users/grand/.minikube/profiles/minikube/client.key
+NAME                          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+jesh-kubernetes-app-service   NodePort    10.104.84.68   <none>        9090:31896/TCP   73m
+kubernetes                    ClusterIP   10.96.0.1      <none>        443/TCP          74m
+NAME       STATUS   ROLES                  AGE   VERSION
+minikube   Ready    control-plane,master   74m   v1.20.0
+Name:               minikube
+Roles:              control-plane,master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=9f1e482427589ff8451c4723b6ba53bb9742fbb1
+                    minikube.k8s.io/name=minikube
+                    minikube.k8s.io/updated_at=2021_01_19T19_53_07_0700
+                    minikube.k8s.io/version=v1.16.0
+                    node-role.kubernetes.io/control-plane=
+                    node-role.kubernetes.io/master=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Tue, 19 Jan 2021 19:53:02 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 19 Jan 2021 21:07:10 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Tue, 19 Jan 2021 21:02:20 -0500   Tue, 19 Jan 2021 19:52:56 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Tue, 19 Jan 2021 21:02:20 -0500   Tue, 19 Jan 2021 19:52:56 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Tue, 19 Jan 2021 21:02:20 -0500   Tue, 19 Jan 2021 19:52:56 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Tue, 19 Jan 2021 21:02:20 -0500   Tue, 19 Jan 2021 19:53:18 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.49.2
+  Hostname:    minikube
+Capacity:
+  cpu:                2
+  ephemeral-storage:  61255492Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             2036816Ki
+  pods:               110
+Allocatable:
+  cpu:                2
+  ephemeral-storage:  61255492Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             2036816Ki
+  pods:               110
+System Info:
+  Machine ID:                 19199bac51474e33ae33735054e56e5e
+  System UUID:                c12a70b3-9ee9-4114-af07-1a05f7b986b9
+  Boot ID:                    af8d52ff-8dda-42a7-9cff-6803eda9f909
+  Kernel Version:             4.19.121-linuxkit
+  OS Image:                   Ubuntu 20.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://20.10.0
+  Kubelet Version:            v1.20.0
+  Kube-Proxy Version:         v1.20.0
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+Non-terminated Pods:          (12 in total)
+  Namespace                   Name                                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                                               ------------  ----------  ---------------  -------------  ---
+  default                     jesh-kubernetes-app-deployment-7f647bb7d4-972zc    0 (0%)        0 (0%)      0 (0%)           0 (0%)         42m
+  default                     jesh-kubernetes-app-deployment-7f647bb7d4-fvdfd    0 (0%)        0 (0%)      0 (0%)           0 (0%)         42m
+  default                     jesh-kubernetes-app-deployment-7f647bb7d4-lctsz    0 (0%)        0 (0%)      0 (0%)           0 (0%)         42m
+  kube-system                 coredns-74ff55c5b-vp4w5                            100m (5%)     0 (0%)      70Mi (3%)        170Mi (8%)     73m
+  kube-system                 etcd-minikube                                      100m (5%)     0 (0%)      100Mi (5%)       0 (0%)         74m
+  kube-system                 kube-apiserver-minikube                            250m (12%)    0 (0%)      0 (0%)           0 (0%)         74m
+  kube-system                 kube-controller-manager-minikube                   200m (10%)    0 (0%)      0 (0%)           0 (0%)         74m
+  kube-system                 kube-proxy-rszfv                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         73m
+  kube-system                 kube-scheduler-minikube                            100m (5%)     0 (0%)      0 (0%)           0 (0%)         74m
+  kube-system                 storage-provisioner                                0 (0%)        0 (0%)      0 (0%)           0 (0%)         74m
+  kubernetes-dashboard        dashboard-metrics-scraper-c95fcf479-7nztp          0 (0%)        0 (0%)      0 (0%)           0 (0%)         45m
+  kubernetes-dashboard        kubernetes-dashboard-6cff4c7c4f-ffww5              0 (0%)        0 (0%)      0 (0%)           0 (0%)         45m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                750m (37%)  0 (0%)
+  memory             170Mi (8%)  170Mi (8%)
+  ephemeral-storage  100Mi (0%)  0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:
+  Type     Reason                   Age                From        Message
+  ----     ------                   ----               ----        -------
+  Normal   NodeHasSufficientMemory  74m (x7 over 74m)  kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal   NodeHasNoDiskPressure    74m (x6 over 74m)  kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal   NodeHasSufficientPID     74m (x6 over 74m)  kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal   Starting                 74m                kubelet     Starting kubelet.
+  Normal   NodeHasSufficientPID     74m                kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal   NodeHasNoDiskPressure    74m                kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal   NodeHasSufficientMemory  74m                kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal   NodeNotReady             74m                kubelet     Node minikube status is now: NodeNotReady
+  Normal   NodeAllocatableEnforced  74m                kubelet     Updated Node Allocatable limit across pods
+  Normal   NodeReady                73m                kubelet     Node minikube status is now: NodeReady
+  Warning  readOnlySysFS            73m                kube-proxy  CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+  Normal   Starting                 73m                kube-proxy  Starting kube-proxy.
+  Normal   Starting                 47m                kubelet     Starting kubelet.
+  Normal   NodeAllocatableEnforced  47m                kubelet     Updated Node Allocatable limit across pods
+  Normal   NodeHasNoDiskPressure    47m (x8 over 47m)  kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal   NodeHasSufficientPID     47m (x7 over 47m)  kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal   NodeHasSufficientMemory  47m (x8 over 47m)  kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Warning  readOnlySysFS            46m                kube-proxy  CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+  Normal   Starting                 46m                kube-proxy  Starting kube-proxy.
+  Normal   Starting                 20m                kubelet     Starting kubelet.
+  Normal   NodeHasSufficientMemory  20m (x8 over 20m)  kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal   NodeHasNoDiskPressure    20m (x8 over 20m)  kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal   NodeHasSufficientPID     20m (x7 over 20m)  kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal   NodeAllocatableEnforced  20m                kubelet     Updated Node Allocatable limit across pods
+  Warning  readOnlySysFS            19m                kube-proxy  CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+  Normal   Starting                 19m                kube-proxy  Starting kube-proxy.
+[0;32mKubernetes control plane[0m is running at [0;33mhttps://127.0.0.1:55032[0m
+[0;32mKubeDNS[0m is running at [0;33mhttps://127.0.0.1:55032/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy[0m
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+|-----------------------------|----------|--------------|
+|         ADDON NAME          | PROFILE  |    STATUS    |
+|-----------------------------|----------|--------------|
+| ambassador                  | minikube | disabled     |
+| csi-hostpath-driver         | minikube | disabled     |
+| dashboard                   | minikube | enabled ✅   |
+| default-storageclass        | minikube | enabled ✅   |
+| efk                         | minikube | disabled     |
+| freshpod                    | minikube | disabled     |
+| gcp-auth                    | minikube | disabled     |
+| gvisor                      | minikube | disabled     |
+| helm-tiller                 | minikube | disabled     |
+| ingress                     | minikube | disabled     |
+| ingress-dns                 | minikube | disabled     |
+| istio                       | minikube | disabled     |
+| istio-provisioner           | minikube | disabled     |
+| kubevirt                    | minikube | disabled     |
+| logviewer                   | minikube | disabled     |
+| metallb                     | minikube | disabled     |
+| metrics-server              | minikube | disabled     |
+| nvidia-driver-installer     | minikube | disabled     |
+| nvidia-gpu-device-plugin    | minikube | disabled     |
+| olm                         | minikube | disabled     |
+| pod-security-policy         | minikube | disabled     |
+| registry                    | minikube | disabled     |
+| registry-aliases            | minikube | disabled     |
+| registry-creds              | minikube | disabled     |
+| storage-provisioner         | minikube | enabled ✅   |
+| storage-provisioner-gluster | minikube | disabled     |
+| volumesnapshots             | minikube | disabled     |
+|-----------------------------|----------|--------------|
+🌟  The 'metrics-server' addon is enabled
+🌑  "The 'metrics-server' addon is disabled
+✋  Stopping node "minikube"  ...
+🛑  Powering off "minikube" via SSH ...
+🛑  1 nodes stopped.
